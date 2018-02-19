@@ -1,5 +1,4 @@
-<!DOCTYPE <DOCTYPE.html
-
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -7,8 +6,8 @@
 
 <!--jQuery--->
 
-<script src "https://ajax.googleapis.com/ajax/jquery/3.2.1/jquery.min.js"></script>
-    <script type = "£ext/javascript" src = "cost_calc.js"></script>
+    <script src "https://ajax.googleapis.com/ajax/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="cost_calc.js"></script>
 
     
 </head>
@@ -19,9 +18,17 @@
 <br/>
 
     <form method = "POST" action ="Ebus2.php">
-<label for "salesforce"> 
-<input type = "radio" id = "Salesforce" name = "product" onClick = "disabledbtnProceed"/>
+<label for "aws"> 
+<input type="radio" id="aws" name="product" onClick="disabledbtnProceed()"/>
 AWS @$300
+</label>
+
+<br/>
+<br/>
+
+<label for "salesforce"> 
+<input type = "radio" id = "salesforce" name = "product" onClick = "disabledbtnProceed()"/>
+Salesforce @$100
 </label>
 
 <br/>
@@ -43,12 +50,12 @@ Total
         <br/>
         <br/>
         
-<button type "submit" id = "btnProceed" disable>Add to Shopping Cart </button>
+<button type "submit" id = "btnProceed" disabled>Add to Shopping Cart </button>
 </form>
 
 <br/>
 
-<button onClick="calcSub()"Calculate Cost </button>
+<button onClick="calcSub()">Calculate Cost </button>
 <a role = "button" href = "Ebus1.php"> Clear Choice </a>
 
 </body>
