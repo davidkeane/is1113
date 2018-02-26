@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 <title>Select Products</title>
 
 <!--jQuery--->
 
-    <script src "https://ajax.googleapis.com/ajax/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="cost_calc.js"></script>
 
     
@@ -17,9 +16,9 @@
 
 <br/>
 
-    <form method = "POST" action ="Ebus2.php">
+    <form method ="POST" action ="Ebus2.php">
 <label for "aws"> 
-<input type="radio" id="aws" name="product" onClick="disabledbtnProceed()"/>
+<input type="radio" id="aws" name="product" checked onClick="disabledbtnProceed()"/>
 AWS @$300
 </label>
 
@@ -28,23 +27,23 @@ AWS @$300
 
 <label for "salesforce"> 
 <input type = "radio" id = "salesforce" name = "product" onClick = "disabledbtnProceed()"/>
-Salesforce @$100
+SalesForce @ $100
 </label>
 
 <br/>
 <br/>
 
-<label for "Subtotal">
+<label for="subtotal">
 Sub Total
-<input type = "text" id = "Subtotal" value = "0.00" readonly/>
+<input type = "text" id = "subtotal" value = "0.00" readonly/>
 </label>
 
 <br/>
 <br/>
 
-<label for "Total">
+<label for="total">
 Total
-<input type = "text" id = "Total" value = "0.00" readonly/>
+<input type = "text" id = "total" value = "0.00" readonly/>
 </label>
         
         <br/>
@@ -54,9 +53,25 @@ Total
 </form>
 
 <br/>
+<br/>
 
 <button onClick="calcSub()">Calculate Cost </button>
+
+<br/>
+<br/>
+
 <a role = "button" href = "Ebus1.php"> Clear Choice </a>
 
 </body>
+
+
+<footer>
+        <a href="https://ucc.ie">
+            <img position ="static" src="https://www.cubsucc.com/images/layout/uccLogo.png"/>
+        </a>
+        <a id="cubs" href="https://www.cubsucc.com/">
+            <img position = "absolute" src="https://www.cubsucc.com/images/layout/logo.png"/>
+        </a>
+    </footer>
+    
 </html>

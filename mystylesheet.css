@@ -1,3 +1,10 @@
 .mainheading{
     text-align: center;
+    font-family: arial;
+}
+ footer{
+    
+    position: fixed;
+    width: 100%;
+    
 }
