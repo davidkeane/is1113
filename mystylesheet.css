@@ -1,10 +1,16 @@
 .mainheading{
     text-align: center;
     font-family: arial;
+    background-color: #1f1e51; /* Dark Blue */
 }
  footer{
     
     position: fixed;
     width: 100%;
     
+}
+
+ul{
+   list-style-type:none; 
+   display:inline-block;
 }

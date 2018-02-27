@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Education</title>
-       <meta charset="utf-8">
+
+  <title>Education Details</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </head>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #1f1e51; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #411e51; /* Purple */
+      color: #ffffff;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  </style>
+</head>
     <body>
         
         <!-- Navbar -->
@@ -24,22 +62,123 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Personal Details</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Work Experience</a></li>
+     <li><a href="cv_homepage.html">My CV</a></li>
+        <li><a href="cv_page1.html">Personal Details</a></li>
+        <li><a href="cv_page2.html">Education</a></li>
+        <li><a href="cv_page3.html">Work Experience</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-        <h1 class="mainheading">Educational Details</h1>
-        
-        <p><strong>College:</strong>University College Cork</p>
-        <p><strong>Course:</strong>Business Information Systems</p>
-        <p><strong>Year:</strong>2017-2021</p>
-        
-        <br/>
 
-        <a href="cv_page3.html">Next</a>
-    </body>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  
+  <h1 align="center"><b>Educational Details</b></h1>
+  
+							<!-- Create a table displaying where I have studied along with aligned images -->
+							<p>
+							<table style="width:100%" align="center">
+							<tr>
+								<td>
+									<div class="round">
+										<a href="https://www.skibbereencommunityschool.ie/">
+										<img src="../images/scscrest.png" align="top;center" style="width:150px;height:150px;border:5px solid black" />
+										</a>
+									</div>
+								</td>
+								<td>
+									<ul>
+										<li>Attended Skibbereen Community School, Skibbereen, Co. Cork (2011-2017).</li>
+									</ul>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<div class="round">
+										<a href="https://www.ucc.ie/">
+										<img src="../images/ucccrest.jpg" align="top;center" style="width:150px;height:150px;border:5px solid black"/>
+										</a>
+									</div>
+								</td>
+								<td>
+									<ul>
+										<li>Currently studying Business Information Systems in University College Cork (2017 - 2021).</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+       
+       <h3 align="center"><strong>Leaving Certificate Results:</strong></h3>
+	  
+						<!-- Create a table showing Leaving Certificate Results -->
+						<table style="width:30%" align="center">
+							<tr>
+								<td><h3><b>Subject:<b/><h3/></td>
+								<td><h3><b>Level:</b><h3/></td>
+								<td><h3><b>Result:</b></h3></td>
+							</tr>
+							<tr>
+								<td>English</td>
+								<td>Higher</td>
+								<td>H3</td>
+							</tr>
+							<tr>
+								<td>Irish</td>
+								<td>Higher</td>
+								<td>H3</td>
+							</tr>
+							<tr>
+								<td>Maths</td>
+								<td>Higher</td>
+								<td>H3</td>
+							</tr>
+							
+							<tr>
+								<td>Business</td>
+								<td>Higher</td>
+								<td>H2</td>
+							</tr>
+							<tr>
+								<td>Accounting</td>
+								<td>Higher</td>
+								<td>H2</td>
+							</tr>
+							<tr>
+								<td>Biology</td>
+								<td>Higher</td>
+								<td>H4</td>
+							</tr>
+							<tr>
+								<td>French</td>
+								<td>Ordinary</td>
+                <td>O4</td>
+							</tr>
+						</table>
+						<br/>
+						<p>The skills I have required over the course of my education are listed below.</p>
+
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+   <h1><b>My Skills</b></h1>
+                <p>
+					<ul>
+						<li>Coding Languages: VB.Net, XHTML, HTML, JavaScript, PHP, css.</li>
+						<li>Competent knowledge of Microsoft Word, Access, PowerPoint, Visio and Excel.</li>
+						<li>French and Irish spoken to an intermediate level.</li>
+					</ul>
+				</p>
+</div>
+
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Copyright &copy; David Keane, 2018.</p> 
+</footer>
+ </body>
 </html>
