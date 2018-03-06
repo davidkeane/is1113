@@ -1,4 +1,62 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+     ul{
+         list-style-type:none;
+         overflow:hidden;
+         margin:0;
+         padding:0;
+         background-color: #333;
+     }
+ li{
+  
+   float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+#navigation{
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+    Position:absolute;top:0%;left:0%;right:0%;
+}
+#music{
+    Position:absolute;top:11%;left:0%;
+}
+</style>
+
+<title>My Interests</title>
+    </head>
     
+     <body>
+        
+         <div id="navigation">
+        <ul>
+       <li><a href="../homepage.html">Home</a></li>
+       <li> <a href="../c.v./cv_homepage.html">Curriculum Vitae</a></li>
+        <li><a class="active" href="interests.html">Interests</a></li>
+        <li><a href="sports.html">Sport</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="../ebusiness/Ebus1.php">eBusiness</a></li>
+        </ul>
+    </div>
+    
+    <img id="music" src = ../images/music.jpg style="border:5px solid black" width="100% align="center">
+
+       
+    </body>
 </html>

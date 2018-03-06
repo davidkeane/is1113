@@ -1,3 +1,8 @@
+<?php
+//Start the session
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +10,7 @@
 
 <!--jQuery--->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="cost_calc.js"></script>
 
     
@@ -19,7 +24,7 @@
     <form method ="POST" action ="Ebus2.php">
 <label for "aws"> 
 <input type="radio" id="aws" name="product" checked onClick="disabledbtnProceed()"/>
-AWS @$300
+AWS @300
 </label>
 
 <br/>
@@ -27,7 +32,7 @@ AWS @$300
 
 <label for "salesforce"> 
 <input type = "radio" id = "salesforce" name = "product" onClick = "disabledbtnProceed()"/>
-SalesForce @ $100
+SalesForce @ 100
 </label>
 
 <br/>
@@ -35,7 +40,7 @@ SalesForce @ $100
 
 <label for "cloud9"> 
 <input type = "radio" id = "cloud9" name = "product" onClick = "disabledbtnProceed()"/>
-Cloud 9 @ $200
+Cloud 9 @ 200
 </label>
 
 <br/>
@@ -43,7 +48,7 @@ Cloud 9 @ $200
 
 <label for "gmail"> 
 <input type = "radio" id = "gmail" name = "product" onClick = "disabledbtnProceed()"/>
-SalesForce @ $400
+Gmail @ 400
 </label>
 
 <br/>

@@ -5,56 +5,61 @@ function calcSub(){
     var argSubTotal;
     
     if(document.getElementById('salesforce').checked){
-    argSubTotal = 100;
-}
-else if(document.getElementById('aws').checked){
-    argSubTotal = 300;
-}
+      argSubTotal = 100;
+    }
+    
+    else if(document.getElementById('gmail').checked){
+        argSubTotal = 400;
+    }
+    
+    else if(document.getElementById('cloud9').checked){
+        argSubTotal = 200;
+    }
+    
+    else{
+        argSubTotal = 300;
+    }
 
-else if(document.getElementById('cloud9').checked){
-    argSubTotal = 200;
+    display(argSubTotal);
+    calcDisVatTotal(argSubTotal);
 }
-
-else if(document.getElementById('gmail').checked){
-    argSubTotal = 400;
-}
-
-display(argSubTotal);
-calcDisVatTotal(argSubTotal);
-}
-
-function calcDisVatTotal(parmSubTotal){
+   
+   function calcDisVatTotal(parmSubTotal){
+       
+       var SubTotal;
+       var discountAmt;
+       var vatAmt;
+       var totalAmt;
+     
+       SubTotal = parmSubTotal;
+       
+       discountAmt = SubTotal * 0.05;
+       
+       vatAmt = (SubTotal - discountAmt) * 0.1;
+       
+       totalAmt = (SubTotal + vatAmt) - discountAmt;
+       
+       display(SubTotal, discountAmt, vatAmt, totalAmt);
+   }
+   
+   
+  
+    function display(parm1, parm2, parm3, parm4){
+        
+        document.getElementById("subtotal").value =  parm1;
+        document.getElementById("discount").value = parm2;
+        document.getElementById("VAT").value =  parm3;
+        document.getElementById("total").value = parm4;
+        
+        
+        enablebtnProceed();
+    }
     
-    var SubTotal;
-    var discountAmt;
-    var vatAmt;
-    var totalAmt;
     
-    SubTotal = parmSubTotal;
+    function enablebtnProceed(){
+        $('#btnProceed').prop('disabled', false);
+    }
     
-    vatAmt = (SubTotal - discountAmt) * 0.1;
-    
-    totalAmt = (SubTotal - discountAmt) + vatAmt;
-    
-    display(SubTotal, discountAmt, vatAmt, totalAmt);
-    
-}
-
-function display(parm1, parm2, parm3, parm4){
-    
-    document.getElementById("subtotal").value = parm1;
-    document.getElementById("discount").value = parm2;
-    document.getElementById("vat").value = parm3;
-    document.getElementById("total").value = parm4;
-    
-    
-    enablebtnProceed();
-}
-
-function enablebtnProceed(){
-    $('#btnProceed').prop('disabled', false);
-}
-
-function disabledbtnProceed() {
-    $('#btnProceed').prop('disabled', true);
-}
+    function disablebtnProceed(){
+        $('#btnProceed').prop('disabled', true);
+    }
