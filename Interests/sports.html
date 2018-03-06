@@ -1,21 +1,58 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
+        <style>
+     ul{
+         list-style-type:none;
+         overflow:hidden;
+         margin:0;
+         padding:0;
+         background-color: #333;
+     }
+ li{
+  
+   float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+#navigation{
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+    Position:absolute;top:0%;left:0%;right:0%;
+}
+</style>
         <title>Sports</title>
-        <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
+       
     
-        <!--Adding Bootstrap-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     </head>
     <body>
-        <h1 class="mainheading">Sports</h1>
         
-        <p><strong>Favourite Sport:</strong> Soccer </p>
-        <p><strong>Training:</strong> None </p>
-        
-        <a href="travel.html" class="btn btn-dark">Next</a>
+         <div id="navigation">
+        <ul>
+       <li><a href="../homepage.html">Home</a></li>
+       <li> <a href="../c.v./cv_homepage.html">Curriculum Vitae</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a class="active" href="sports.html">Sport</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="../ebusiness/Ebus1.php">eBusiness</a></li>
+        </ul>
+    </div>
+
+       
     </body>
 </html>
