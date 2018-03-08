@@ -37,18 +37,18 @@ function calcSub(){
        
        vatAmt = (SubTotal - discountAmt) * 0.1;
        
-       totalAmt = (SubTotal + vatAmt) - discountAmt;
+       totalAmt = (SubTotal - discountAmt) + vatAmt ;
        
        display(SubTotal, discountAmt, vatAmt, totalAmt);
    }
    
    
   
-    function display(parm1, parm2, parm3, parm4){
+    function display(parm1, parm2, parm3, parm4, parm5){
         
         document.getElementById("subtotal").value =  parm1;
         document.getElementById("discount").value = parm2;
-        document.getElementById("VAT").value =  parm3;
+        document.getElementById("vat").value =  parm3;
         document.getElementById("total").value = parm4;
         
         

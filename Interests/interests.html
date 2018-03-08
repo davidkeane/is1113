@@ -2,6 +2,9 @@
 <html>
     <head>
         <style>
+        html,body{
+            height:150%;
+        }
      ul{
          list-style-type:none;
          overflow:hidden;
@@ -34,17 +37,52 @@ li a:hover:not(.active) {
     color: #f5f6f7;
     Position:absolute;top:0%;left:0%;right:0%;
 }
-#music{
-    Position:absolute;top:11%;left:0%;
+
+#paragraph1{
+    color:white;
+    padding-top:300px;
+}
+#paragraph2{
+    color:white;
+    padding-top:1000px;
+}
+
+p{
+    color:white;
+    font-size: 30px;
+    font-family:Helvetica;
+}
+
+.table{
+    position:absolute;
+    left:10%;
+}
+a{
+    color:#b71c1c;
+}
+
+.link{
+    position:relative;
+    left:17%;
+}
+
+.link1{
+    position:relative;
+    left:22%;
+}
+iframe{
+    position:absolute;
+    top:360%;
+    left:32%;
+    padding-bottom:30px;
 }
 </style>
 
 <title>My Interests</title>
     </head>
-    
-     <body>
+    <body style="background-image:url(../images/music_background.jpg)" background-size:cover>
         
-         <div id="navigation">
+         <div id="navigation" align="center">
         <ul>
        <li><a href="../homepage.html">Home</a></li>
        <li> <a href="../c.v./cv_homepage.html">Curriculum Vitae</a></li>
@@ -53,10 +91,58 @@ li a:hover:not(.active) {
         <li><a href="travel.html">Travel</a></li>
         <li><a href="../ebusiness/Ebus1.php">eBusiness</a></li>
         </ul>
-    </div>
-    
-    <img id="music" src = ../images/music.jpg style="border:5px solid black" width="100% align="center">
 
+        <img src = ../images/music.jpg style="border:5px solid black">
+     
+    </div>
+
+        <p id = "paragraph1" align="center">I have a huge love for music. I spend almost all my spare time listening to music with my headphones or through my speaker. Despite not 
+            being musically gifted myself I've always always enjoyed it greatly. I enjoy listening to music when I study as I feel it helps me to concentrate. I have
+            queit a broad taste in music and will listen to almost anything.
+        </p>
+
+  <div align="center">
+      <img src=../images/music_simpsons.gif >
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+       <p align="center">
+           Some of my favourite genres of music are definitely R&B and Hip-Hop. My favourite artists include <a href = "http://www.postmalone.com/"><u>Post Malone</u></a>,
+           <a href ="https://blonded.co/"><u>Frank Ocean</u></a>, <a href="http://www.khalidofficial.com/"><u>Khalid</u></a> and <a href="http://www.drakeofficial.com/"><u>Drake</u></a>.
+       </p>
        
+       <table style="width:100%" align="center" class="table">
+			<tr>
+				<td><a href="http://www.khalidofficial.com/"><img src="../images/khalid.jpg"></a></td>
+				<td><a href="http://www.drakeofficial.com/"><img src="../images/drake.jpg"></a></td>
+			</tr>
+			<tr>
+				<td><a href="http://www.khalidofficial.com/" class = "link1"><h1>Khalid</h1></a></td>
+				<td><a href="http://www.drakeofficial.com/" class = "link1"><h1>Drake</h1></a></td>
+			</tr>
+			<tr>
+				<td><a href="http://www.postmalone.com/"><img src="../images/Post_Malone.jpg"></a></td>
+				<td><a href="https://blonded.co/"><img src="../images/frankocean.jpg"></a></td>
+			</tr>
+			<tr>
+				<td><a href="http://www.postmalone.com/" class = "link"><h1>Post Malone</h1></a></td>
+				<td><a href="https://blonded.co/" class = "link"><h1>Frank Ocean</h1></a></td>
+			</tr>
+		</table>
+		
+		<div>
+		    <br>
+		    <p id = "paragraph2" align="center">
+		        Below is a video of one of my favourite songs, "8teen", by one of my favourite artists <a href="https://www.khalidofficial.com/"><u>Khalid</u></a>.
+		    </p>
+		</div>
+	<div>
+		
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/OqJLLVVZWv0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		
+	</div>
+	
     </body>
 </html>
