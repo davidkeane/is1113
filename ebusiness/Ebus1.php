@@ -82,7 +82,6 @@ input{
     font-weight:bold;
 }
 
-
     </style>
 </head>
 <body>
@@ -141,7 +140,7 @@ input{
 
 <div id="txtbox" align="center">
 <label for="subtotal">
-Sub Total
+Sub Total:
 <input type = "text" id = "subtotal" name="subtotal" value = "0.00" readonly/>
 </label>
 
@@ -149,7 +148,7 @@ Sub Total
 <br/>
 
 <label for="discount">
-Discount
+Discount:
 <input type = "text" id = "discount" name = "discount" value = "0.00" readonly/>
 </label>
 
@@ -157,7 +156,7 @@ Discount
 <br/>
 
 <label for="vat">
-V.A.T.
+VAT:
 <input type = "text" id = "vat" name = "vat" value = "0.00" readonly/>
 </label>
 
@@ -165,20 +164,20 @@ V.A.T.
 <br/>
 
 <label for="total">
-Total
+Total:
 <input type = "text" id = "total" name="total" value = "0.00" readonly/>
 </label>
     <br>
     <br>
 </div>
         <div align="center">
-<button type "submit" id = "btnProceed" disabled>Add to Shopping Cart </button>
+<button type "submit" id = "btnProceed" disabled>Add to Shopping Cart</button>
 </form>
 
 <br/>
 <br/>
 
-<button onClick="calcSub()">Calculate Cost </button>
+<button onClick="calcSub()">Calculate Cost</button>
         
         <br/>
         <br/>
