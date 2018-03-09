@@ -31,7 +31,7 @@
   }
   .container-fluid {
       padding-top: 70px;
-      padding-bottom: 70px;
+      padding-bottom: 520px;
   }
   .navbar {
       padding-top: 15px;
@@ -44,6 +44,25 @@
   }
   .navbar-nav  li a:hover {
       color: #1abc9c !important;
+  }
+  .h1{
+  	position:absolute;
+  	left:20%;
+  }
+  .table2{
+  	position:absolute;
+  	left:40%;
+  	top:80%;
+  }
+  .skillsparagraph{
+  	position:absolute;
+  	left:30%;
+  	top:130%;
+  }
+  .skills{
+  	position:absolute;
+  	left:20%;
+  	top:135%;
   }
   </style>
 </head>
@@ -76,16 +95,16 @@
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
   
-  <h1 align="center"><b>Educational Details</b></h1>
+  <h1 class="h1"><b>Educational Details</b></h1>
   
 							<!-- Create a table displaying where I have studied along with aligned images -->
 							<p>
-							<table style="width:100%" align="center">
+							<table class="table1">
 							<tr>
 								<td>
-									<div class="round">
+									<div>
 										<a href="https://www.skibbereencommunityschool.ie/">
-										<img src="../images/scscrest.png" align="top;center" style="width:150px;height:150px;border:5px solid black" />
+										<img src="../images/scscrest.png" style="width:150px;height:150px;border:5px solid black" alt="SCS Crest" />
 										</a>
 									</div>
 								</td>
@@ -100,7 +119,7 @@
 								<td>
 									<div class="round">
 										<a href="https://www.ucc.ie/">
-										<img src="../images/ucccrest.jpg" align="top;center" style="width:150px;height:150px;border:5px solid black"/>
+										<img src="../images/ucccrest.jpg" style="width:150px;height:150px;border:5px solid black" alt="UCC Crest"/>
 										</a>
 									</div>
 								</td>
@@ -112,13 +131,14 @@
 							</tr>
 						</table>
        
-       <h3 align="center"><strong>Leaving Certificate Results:</strong></h3>
+       <h3><strong>Leaving Certificate Results:</strong></h3>
 	  
 						<!-- Create a table showing Leaving Certificate Results -->
-						<table style="width:30%" align="center">
+						<div class="table2">
+						<table>
 							<tr>
-								<td><h3><b>Subject:<b/><h3/></td>
-								<td><h3><b>Level:</b><h3/></td>
+								<td><h3><b>Subject:</b></h3></td>
+								<td><h3><b>Level:</b></h3></td>
 								<td><h3><b>Result:</b></h3></td>
 							</tr>
 							<tr>
@@ -155,29 +175,26 @@
 							<tr>
 								<td>French</td>
 								<td>Ordinary</td>
-                <td>O4</td>
+                				<td>O4</td>
 							</tr>
 						</table>
+						</div>
 						<br/>
-						<p>The skills I have required over the course of my education are listed below.</p>
-
-</div>
-
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-   <h1><b>My Skills</b></h1>
-                <p>
+						<p class="skillsparagraph">The skills I have required over the course of my education are listed below.</p>
+						<div class="skills">
+						<h1><b>My Skills</b></h1>
 					<ul>
 						<li>Coding Languages: VB.Net, XHTML, HTML, JavaScript, PHP, css.</li>
 						<li>Competent knowledge of Microsoft Word, Access, PowerPoint, Visio and Excel.</li>
 						<li>French and Irish spoken to an intermediate level.</li>
 					</ul>
-				</p>
+</div>
 </div>
 
 
+
 <!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
+<footer class="bg-4 text-center">
   <p>Copyright &copy; David Keane, 2018.</p> 
 </footer>
  </body>

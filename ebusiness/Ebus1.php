@@ -7,7 +7,7 @@ session_start();
 <html>
 <head>
 <title>Select Products</title>
-
+<meta charset="UTF-8">
 <!--jQuery--->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

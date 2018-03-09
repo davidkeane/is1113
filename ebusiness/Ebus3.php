@@ -7,7 +7,7 @@ session_start();
 <html>
     <head>
         <title>Receipt</title>
-        
+        <meta charset="UTF-8">
          <style>
      ul{
          list-style-type:none;

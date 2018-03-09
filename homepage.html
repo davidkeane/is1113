@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Homepage</title>
-       
+       <meta charset="UTF-8">
        <style>
      ul{
          list-style-type:none;
@@ -43,10 +43,44 @@ font-size:30px;
 }
 #pagecontents{
     padding-top:50px;
+    position:absolute;
+    top:10%;
+    left:0%;
 }
-h2{
+.h1{
+    position:absolute;
+    top:7%;
+    left:35%;
+}
+.h2{
     font-family:Helvetica;
     color:Red;
+    position:absolute;
+    top:60%;
+    left:40%;
+}
+.cloudlogo{
+    position:absolute;
+    top:68%;
+    left:40%;
+}
+.h3{
+    position:absolute;
+    left:50%;
+    top:6%;
+    font-family:helvetica;
+    font-size:30px;
+}
+.githublogo{
+    float:left;
+    width:50%;
+    height:250px;
+    
+}
+.herokulogo{
+    float:right;
+    width:50%;
+    height:250px;
 }
 </style>
 
@@ -65,30 +99,29 @@ h2{
         </ul>
         
     </div>
-<div id="pagecontents">
-<h1 align="center">117386211 - IS1113 Project</h1>        
 
+<h1 class="h1">117386211 - IS1113 Project</h1>  
+<div id="pagecontents">
 <h3 id = "github">My Github</h3>
-<h3 id ="heroku" style="margin-left:40%">My Heroku</h3>
+<h3 class="h3">My Heroku</h3>
         <div>
             <a href="#">
-            <img title="My Github" src="../images/github_logo.png" style="float:left" margin-left="50%" height="250px" width="50%">
+            <img class = "githublogo" title="My Github" src="../images/github_logo.png" alt="Github Logo">
     </a>    
     </div>
-    <div align="right">
+    <div>
    
     <a href="#">
-        <img title="My Heroku" src="../images/heroku_logo.png" style="float:right" margin-right="50%"  height="250px" width="50%">
+        <img class="herokulogo" title="My Heroku" src="../images/heroku_logo.png" alt="Heroku Logo">
     </a>
     </div>
         </div>
        
-        <h2 align="center"><b>View my eBusiness?</b></h2>
+        <h2 class="h2"><b>View my eBusiness?</b></h2>
         <a href="Interests/cloudservices.html">
-        <div align="center">
-            <img src="../images/cloud_logo.png">
+        <div class="cloudlogo">
+            <img src=../images/cloud_logo.png alt="Cloud Lab logo">
         </div></a>
-    </div>
     </body>
     
     
